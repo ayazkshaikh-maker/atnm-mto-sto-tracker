@@ -1,0 +1,10 @@
+# never commit tracker data or source Excel files
+*.xlsx
+*.xls
+*.xlsm
+*.json
+!package.json
+node_modules/
+.claude/
+desktop.ini
+*.tmp
