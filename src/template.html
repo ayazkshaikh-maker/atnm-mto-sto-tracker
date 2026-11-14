@@ -4,21 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Al Tasnim ODC Nimr - MTO - STO Status Tracker</title>
-<meta name="description" content="Offline single-file tracker: MTO requests vs SAP STO report - pending, approved, issued, double entries and well inventory.">
+<meta name="description" content="MTO register in the STO PO Standard request template, STO / STOCK / PO matching, received vs requested by account, material master and well inventory.">
 <style>
 /*__CSS__*/
 </style>
 </head>
 <body>
 <div id="app">
-  <aside id="side" aria-label="Navigation"></aside>
-  <main><header id="top"></header><div id="view" tabindex="-1"></div></main>
+  <nav id="rail" aria-label="Main menu"></nav>
+  <main id="main"><header id="top"></header><div id="view" tabindex="-1"></div></main>
 </div>
 <div id="drawer" hidden></div>
 <div id="modal" hidden></div>
+<div id="pop" hidden></div>
+<div id="cmdk" hidden></div>
 <div id="toasts" aria-live="polite"></div>
-<noscript>This tracker needs JavaScript enabled.</noscript>
-<!-- xlsx-js-style 1.2.0 (SheetJS CE 0.18.5 fork, Apache-2.0) - inlined so the file works offline -->
+<noscript>This tracker needs JavaScript.</noscript>
+<!-- xlsx-js-style 1.2.0 (SheetJS CE 0.18.5 fork, Apache-2.0), inlined so the file also works offline -->
 <script>
 /*__XLSX__*/
 </script>
